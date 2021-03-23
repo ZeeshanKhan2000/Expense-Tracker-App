@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header h2{
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.balance h4{
+  text-align: center;
+  padding: 1rem 11rem;
+  &-h1{
+    text-align: center;
+  }
+}
+
