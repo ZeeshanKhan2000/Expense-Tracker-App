@@ -72,7 +72,7 @@ jobs:
         cmd: install
         
     - name: Build React App
-      run: yarn build
+      run: npm build
       
     # Install Surge
     - name: Install Surge
