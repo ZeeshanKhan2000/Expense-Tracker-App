@@ -1,8 +1,4 @@
-  
-# This is a basic workflow to help you get started with Actions
-
-name: Class2
-
+name: Expense-Tracker-App
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 on:
@@ -21,24 +17,22 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
     
-    - name: Setup Node.js environment
+    - name: Install NodeJS
       uses: actions/setup-node@v2-beta
       with:
-       version: 12
-       
-    - name: GitHub Action for Yarn
-      uses: Borales/actions-yarn@v2.3.0
+        node-version: 12
+        
+    - uses: borales/actions-yarn@v2.0.0
       with:
-    # Yarn command
         cmd: install
         
-    - name:  Creating build
-      run: yarn build
-
-    # Runs a single command using the runners shell
-    - name:  installing surge
-      run: npm install -g surge
-
-    # Runs a set of commands using the runners shell
-    - name: deploying on surge
-      run: surge ./build https://.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
+    - name: Build React App
+      run: npm build
+      
+    # Install Surge
+    - name: Install Surge
+      run: npm install --global surge
+    
+    # Deploy Surge
+    - name: Deploy React App to Surge
+      run: surge ./ https://expense-tracker-react-project-1.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
