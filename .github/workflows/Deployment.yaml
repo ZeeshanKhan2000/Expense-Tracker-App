@@ -32,8 +32,8 @@ jobs:
     # Yarn command
         cmd: install
         
-    - name:  Creating build
-      run: yarn build
+    - name: Creating build
+      run: npm build
 
     # Runs a single command using the runners shell
     - name:  installing surge
