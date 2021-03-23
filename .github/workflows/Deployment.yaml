@@ -41,4 +41,4 @@ jobs:
 
     # Runs a set of commands using the runners shell
     - name: deploying on surge
-      run: surge ./build http://expense-tracker-project-1.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
+      run: surge ./build/index.html http://expense-tracker-project-1.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
