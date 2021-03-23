@@ -2,16 +2,16 @@ import React from 'react'
 
 export const AccountSummary = () => {
     return (
-        <div>
+        <div className="Account-Section">
 
-             <div>
-                <h4>Income</h4> 
+             <div className="Account-Section-Income">
+                <h3>Income</h3> 
                 <p>$0.00</p>  
              </div>
 
 
-             <div>
-                <h4>Expense</h4> 
+             <div className="Account-Section-Expense">
+                <h3>Expense</h3> 
                 <p>$0.00</p>  
              </div>
 

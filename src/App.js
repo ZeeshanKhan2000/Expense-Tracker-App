@@ -11,16 +11,17 @@ import { AddTransactions } from './Components/AddTransactions';
 
 function App() {
   return (
-    <div>
-     <Header />
-     <div className="container"> 
+
+     <div className="container">
+      
+      <Header /> 
       <Balance />
       <AccountSummary />
       <TransactionHistory />
       <AddTransactions />
-
+    
      </div>
-    </div>
+     
   );
 }
 
