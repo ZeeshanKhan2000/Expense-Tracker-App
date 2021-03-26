@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 const AddTransactions = () => {
 
 const [text,setText] = useState('');
-const [amount,setAmount] = useState(0);
+const [amount,setAmount] = useState();
 
     return (
 
