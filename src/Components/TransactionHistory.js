@@ -1,13 +1,15 @@
 import React from 'react'
 
-export const TransactionHistory = () => {
+const TransactionHistory = () => {
     return (
-        <div>
-            <h3>Transaction History</h3>
+        <div className="Transition-History">
+            <h3>Transaction History</h3> <br />
+            <hr />
             <ul>
-                <li className="plus"><span>$100</span> <button className="delete-btn">X</button></li>
-                <li className="minus"><span>-$20</span> <button className="delete-btn">X</button> </li>
+                <li>cash</li>
             </ul>
         </div>
     )
 }
+
+export  default TransactionHistory;

@@ -1,0 +1,12 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', Verdana, sans-serif;
+}
+
+@import './Sass/header';
+@import './Sass/balance';
+@import './Sass/Account-Section';
+@import './Sass/Transition-History';
+@import './Sass/Add-Transaction';

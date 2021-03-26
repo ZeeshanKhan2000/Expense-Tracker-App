@@ -1,27 +1,20 @@
 import React from 'react';
-import './App.scss';
-import { Header } from './Components/Header';
-import { Balance } from './Components/Balance';
-import { AccountSummary } from './Components/AccountSummary';
-import { TransactionHistory } from './Components/TransactionHistory';
-import { AddTransactions } from './Components/AddTransactions';
-
-
-
+import './Main.scss';
+import Header from './Components/Header';
+import Balance  from './Components/Balance';
+import AccountSummary  from './Components/AccountSummary';
+import TransactionHistory  from './Components/TransactionHistory';
+import AddTransactions  from './Components/AddTransactions';
 
 function App() {
   return (
-
      <div className="container">
-      
-      <Header /> 
-      <Balance />
-      <AccountSummary />
-      <TransactionHistory />
-      <AddTransactions />
-    
+         <Header /> 
+         <Balance />
+         <AccountSummary />
+         <TransactionHistory />
+         <AddTransactions />
      </div>
-     
   );
 }
 

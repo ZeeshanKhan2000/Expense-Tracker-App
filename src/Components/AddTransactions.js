@@ -1,22 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-export const AddTransactions = () => {
+const AddTransactions = () => {
+
+const [text,setText] = useState('');
+const [amount,setAmount] = useState(0);
+
     return (
-        <div>
-            <h4>Add Transactions</h4>
-            <form>
-                <div>
-                    <label htmlFor='description' id="description">Description</label>
-                    <input type="text"placeholder="Detail of Transaction" />
-                </div>
 
-                <div>
-                    <label htmlFor='Amount' id="Amount">Transaction Amount</label>
-                    <input type="number"placeholder="Enter Transaction value" />
+        <div className="Add-Transitions">
+            <h3>Add Transactions</h3><br /> <hr />
+            <form >
+                <div><br />
+                    <label htmlFor='description' className="Add-Transitions-Des">Description</label>
+                    <input value={text} onChange={(e)=>setText(e.target.value)} required className="Add-Transitions-Input" type="text" placeholder="Detail of Transaction" /><br />
                 </div>
-
-                <button className="transaction-btn">Add Transactions</button>
+                <div><br />
+                    <label htmlFor='Amount' className="Add-Transitions-Amount" className="Add-Transitions-Amount">Transaction Amount</label>
+                    <input value={amount} onChange={(e)=>setAmount(e.target.value)}  required className="Add-Transitions-Input" type="number" placeholder="Enter Transaction Value" /><br /><br />
+                </div><br />
+                <button className="Add-Transitions-btn" type="submit">Add Transactions</button>
             </form>
         </div>
     )
 }
+
+export default AddTransactions;
