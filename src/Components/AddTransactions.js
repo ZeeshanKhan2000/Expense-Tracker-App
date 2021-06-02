@@ -8,7 +8,7 @@ const AddTransactions = () => {
     return (
 
         <div className="Add-Transitions">
-            <h3>Add Transactions</h3><br /><hr />
+            <h3>Add Transactions</h3><hr />
             <form >
                 <div><br />
                     <label htmlFor='description' className="Add-Transitions-Des">Description</label>

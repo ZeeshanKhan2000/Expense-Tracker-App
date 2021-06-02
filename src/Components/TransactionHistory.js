@@ -8,7 +8,7 @@ const TransactionHistory = () => {
     
     return (
         <div className="Transition-History">
-         <h3>Transaction History</h3> <br /><hr />
+         <h3>Transaction History</h3> <hr />
             <ul>
                 {transactions.map((transObject, ind) => {
                     return (
