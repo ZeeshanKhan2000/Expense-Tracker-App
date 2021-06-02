@@ -10,14 +10,14 @@ const AddTransactions = () => {
         <div className="Add-Transitions">
             <h3>Add Transactions</h3><hr />
             <form >
-                <div><br />
+                <div>
                     <label htmlFor='description' className="Add-Transitions-Des">Description</label>
-                    <input value={text} onChange={(e) => setText(e.target.value)} required className="Add-Transitions-Input" type="text" placeholder="Detail of Transaction" /><br />
+                    <input value={text} onChange={(e) => setText(e.target.value)} required className="Add-Transitions-Input" type="text" placeholder="Detail of Transaction" />
                 </div>
-                <div><br />
+                <div>
                     <label htmlFor='Amount' className="Add-Transitions-Amount">Transaction Amount</label>
-                    <input value={amount} onChange={(e) => setAmount(e.target.value)} required className="Add-Transitions-Input" type="number" placeholder="Enter Transaction Value" /><br /><br />
-                </div><br />
+                    <input value={amount} onChange={(e) => setAmount(e.target.value)} required className="Add-Transitions-Input" type="number" placeholder="Enter Transaction Value" />
+                </div>
                 <button className="Add-Transitions-btn" type="submit">Add Transactions</button>
             </form>
         </div>
