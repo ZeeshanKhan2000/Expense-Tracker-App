@@ -32,6 +32,9 @@ jobs:
       with:
         cmd: install # will run `yarn install` command
         
+    - name: Nodes Sass Install        
+      run: npm install node-sass5
+        
     - name: Build React App
       run: yarn build
       
