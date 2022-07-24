@@ -6,9 +6,6 @@ import Balance  from './Components/Balance';
 import AccountSummary  from './Components/AccountSummary';
 import TransactionHistory  from './Components/TransactionHistory';
 import AddTransactions  from './Components/AddTransactions';
-
-//Import css throught sass (Syntactically Awesome StyleSheet) 
-//which is css Preprocessor/Precompiler
 import './Main.scss';
 
 
