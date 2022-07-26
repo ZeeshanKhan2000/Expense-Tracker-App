@@ -1,21 +1,15 @@
-import React, { createContext } from 'react'
+import  { createContext } from 'react';
 
-
+// Create the initial state
 const initialState = {
-    transactions:[
-        {   des: "Books", Amount: 100 },
-        {   des: "Pen",   Amount: -100  }
+    transactions: [
+        { id: 1, des: "Income 1", amount: 1000 },
+        { id: 2, des: "Expense 1", amount: -100 },
+        { id: 3, des: "Income 2", amount: 2000 },
+        { id: 4, des: "Expense 2", amount: -500 }
     ]
 }
 
+const GlobalContext = createContext(initialState);
 
-export  const GlobalContext = createContext(initialState)
-
-
-export  const GlobalProvider =  ({children}) => {
-    return(
-        <GlobalContext.Provider value={{ transactions: state.transactions }  }>
-            {children}
-        </GlobalContext.Provider>
-    )
-}
+export default GlobalContext;
