@@ -1,9 +1,14 @@
-import './App.css';
+import './index.css';
+import { Header, Balance, AccountSummary, History, Transactions } from './Components'
 
 function App() {
   return (
-    <div>
-
+    <div className="container">
+      <Header/>
+      <Balance />
+      <AccountSummary />
+      <History />
+      <Transactions />
     </div>
   );
 }
