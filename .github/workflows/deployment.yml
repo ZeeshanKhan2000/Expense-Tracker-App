@@ -6,7 +6,7 @@ name: Project-1
 # events but only for the master branch
 on:
   push:
-    branches: [ test ]
+    branches: [ master ]
 
 jobs:
   # This workflow contains a single job called "build"
