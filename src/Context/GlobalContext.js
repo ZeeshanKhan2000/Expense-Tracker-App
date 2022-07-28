@@ -4,8 +4,7 @@ import  { AppReducer } from './reducer';
 
 const initialData = [
     { amount: 800, description: "Cash" },
-    { amount: 40, description: "Book" },
-    { amount: -200, description: "Camera" }
+    { amount: 40, description: "Book" }
 ]
 
 export const TransactionContext = createContext(initialData);
