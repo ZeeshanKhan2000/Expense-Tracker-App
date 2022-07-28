@@ -25,7 +25,7 @@ const Balance = () => {
   }
   return (
     <>
-      <h3 className={styles.sub_heading}> Balance:  <span>${getIncome() + getExpense() }</span> </h3>
+      <h3 className={styles.sub_heading}> Balance:  <span>${getIncome() + getExpense()}</span> </h3>
     </>
   )
 }

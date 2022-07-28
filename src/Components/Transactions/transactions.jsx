@@ -4,11 +4,11 @@ import styles from './style.module.css'
 
 
 const Transactions = () => {
-  
+
 
     const { addTransaction } = useContext(TransactionContext);
     const [description, setDes] = useState("");
-    const [amount, setAmount] = useState(""); 
+    const [amount, setAmount] = useState("");
 
 
 
@@ -18,8 +18,8 @@ const Transactions = () => {
         if (description === "") {
             alert("Please Enter The Description")
             return false
-        } 
-        else if (amount == 0){
+        }
+        else if (amount == 0) {
             alert("Please Enter The Amount")
             return false
         }
